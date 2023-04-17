@@ -1,0 +1,147 @@
+.hello-caroline {
+  position: absolute;
+  top: 93px;
+  left: 57px;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-gray-100);
+  display: inline-block;
+  width: 131px;
+  height: 31.1px;
+}
+.why-dont-you {
+  position: absolute;
+  top: 131px;
+  left: 49px;
+  color: var(--color-darkgray);
+}
+.details,
+.services {
+  position: absolute;
+  top: 470px;
+  left: 211px;
+}
+.details {
+  left: 312px;
+  color: var(--color-darkgray);
+}
+.homepage-child {
+  position: absolute;
+  top: 792px;
+  left: 0px;
+  border-radius: 0 0 var(--br-xl) var(--br-xl);
+ background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 392px;
+  height: 60px;
+}
+.homepage-item {
+  position: absolute;
+  top: 530px;
+  left: 158px;
+  border-radius: 10px;
+  background-color: white;
+  width: 214px;
+  height: 48px;
+  
+}
+.add-drier {
+  position: absolute;
+  top: 546px;
+  left: 216px;
+  color: var(--color-royalblue);
+}
+
+
+.homepage-inner {
+  position: absolute;
+  top: 680px;
+  left: 158px;
+  border-radius: 10px;
+  background-color: white;
+  width: 214px;
+  height: 48px;
+  cursor: pointer;
+}
+.add-wash {
+  position: absolute;
+  top: 698px;
+  left: 220px;
+  color: var(--color-royalblue);
+}
+
+
+.account,
+.home,
+.reviews {
+  position: absolute;
+  top: 829px;
+  font-size: 14px;
+color: black;
+
+
+}
+.home {
+  left: 70px;
+  color: black;
+}
+.account,
+.reviews {
+  left: 182px;
+}
+.account {
+  left: 297px;
+}
+.ellipse-icon {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+}
+.homepage-child1,
+.homepage-child2,
+.rectangle-icon {
+  position: absolute;
+  top: 171px;
+  left: 1px;
+  width: 392px;
+  height: 261px;
+  object-fit: cover;
+}
+.homepage-child1,
+.homepage-child2 {
+  top: 498.08px;
+  left: 11.1px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 142.68px;
+  height: 122.85px;
+}
+.homepage-child2 {
+  top: 641px;
+  left: 11px;
+  width: 141px;
+  height: 121px;
+}
+
+.homepage {
+  position: relative;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    180deg,
+    #fff,
+    #fff 42.37%,
+    #fff 54.34%,
+    #b5dffc 70.77%,
+    #b5dffc
+  );
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-nunito);
+}

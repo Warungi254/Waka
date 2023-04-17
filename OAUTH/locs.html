@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/location.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"/>
+  <title>WakaWash</title>
+</head>
+<body>
+    <div class="location">
+        <div class="before-we-begin-container">
+          <p class="before-we-begin">Before we begin where</p>
+          <p class="before-we-begin">Where would you want your</p>
+          <p class="before-we-begin">laundry service done?</p>
+        </div>
+        <img class="location-item" alt="logo image" src="./img/logo.png" />
+        <button class="next-button" onclick="location.href='/OAUTH/index.html'">Next</button>
+        <form >
+          <label for="search-vendors" class="select">Search Vendors</label>
+          <input type="text" class="vendor-input">
+          </form>
+             <button onclick="getVendors()" class="get-vendors">Get Vendors</button>
+             <div class="vendors-container"></div>
+
+    </div>
+    <script>
+        function getVendors() {
+  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  const targetUrl = 'https://api.olabet.co.mz/addmachine';
+  const payload = {
+    operation: 'getallvendors'
+  };
+
+  fetch(proxyUrl + targetUrl, 
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  })
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    const vendorsList = document.createElement('ul');
+    data.forEach(vendor => {
+      const vendorItem = document.createElement('li');
+      vendorItem.textContent = vendor.name;
+      vendorsList.appendChild(vendorItem);
+    });
+    const vendorsContainer = document.querySelector('.vendors-container');
+    vendorsContainer.appendChild(vendorsList);
+  })
+  .catch(error => {
+    console.error(error);
+    alert('An error occurred while retrieving vendors.');
+  });
+}
+
+    </script>
+    </body>
+    </html>

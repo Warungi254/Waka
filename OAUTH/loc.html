@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/location.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"/>
+  <title>WakaWash</title>
+</head>
+<body>
+    <div class="location">
+        <div class="before-we-begin-container">
+          <p class="before-we-begin">Before we begin where</p>
+          <p class="before-we-begin">Where would you want your</p>
+          <p class="before-we-begin">laundry service done?</p>
+        </div>
+        <img class="location-item" alt="logo image" src="./img/logo.png" />
+        <button class="next-button" onclick="location.href='/OAUTH/index.html'">Next</button>
+        <form autocomplete="off">
+          <div class="container">
+          <label for="search-vendors" class="select">Search Vendors</label>
+          <input type="text" class="vendor-input" id="name-input" >
+          <ul class="autocomplete-list" id="name-list"> 
+           <li>Try Laundromat</li>
+            <li>Stanley Laundromat</li>
+            <li>Caroline laundromat</li>
+          </ul>
+          </div>
+          </form>
+             <!--<button onclick="getVendors()" class="get-vendors">Get Vendors</button>-->
+        
+    </div>
+    <script>
+      let name = [];
+     const nameListElement = document.querySelector("#name-list")
+     const nameInputElement = document.querySelector("#name-input")
+      function getVendors() {
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://api.olabet.co.mz/addmachine';
+        const payload = {
+          operation: 'getallvendors'
+        };
+  
+        fetch(proxyUrl + targetUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          name = data.map((x) => x.name.Vendorname);
+          name.sort();
+          loadData(name, nameListElement);
+        
+        })
+        .catch(error => {
+          console.error(error);
+         //alert('An error occurred while retrieving vendors.');
+        });
+      }
+
+      function loadData(data, element){
+        if (data){
+          element.innerHTML = "";
+          let innerElement = "";
+          data.forEach((item) => {
+            innerElement += `
+           <li>${item}</li>`;
+          });
+
+          element.innerHTML = innerElement;
+        }
+      }
+      function filterData(data, searchText){
+       return data.filter((x) => x.toLowercase().includes(searchText.toLowercase()));
+      }
+
+      getVendors();
+
+      nameInputElement.addEventListener("input", function(){
+        const filteredData = filterData (name, nameInputElement.value);
+        loadData(filteredData, nameListElement);
+      });
+    </script>
+</body>
+</html>

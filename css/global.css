@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-nunito: Nunito;
+    --font-habibi: Habibi;
+    --font-montserrat: Montserrat;
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+    --font-size-mini: 15px;
+    --font-size-xs: 12px;
+  
+    /* Colors */
+    --color-royalblue: #0767f8;
+    --color-white: #fff;
+    --color-gray: rgba(0, 0, 0, 0.8);
+    --color-black: #000;
+  
+    /* border radiuses */
+    --br-xl: 20px;
+  }
+  

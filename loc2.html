@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch Example with Proxy</title>
+</head>
+<body>
+ <h1> Waka Wash Vendors</h1>
+ 
+
+  <script>
+   const api_url = 'https://api.olabet.co.mz/addmachine';
+   async function getMachine(){
+    const response = await fetch (api_url);
+    const data = await response.json();
+    console.log(data);
+   }
+    getMachine() ;
+   </script>
+</body>
+    </html>

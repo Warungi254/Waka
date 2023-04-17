@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/account.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="profile">
+      <div class="profile1">Profile</div>
+      <div class="caroline-waruingi">Caroline Waruingi</div>
+      <div class="cwanjirugmailcom">cwanjiru@gmail.com</div>
+      <div class="profile-child"></div>
+      <div class="account-details">Account details</div>
+      <div class="profile-item"></div>
+      <div class="profile-inner" id="rectangle2"></div>
+      <div class="rectangle-div"></div>
+      <div class="profile-child1"></div>
+      <div class="profile-child2"></div>
+      <!--<div class="profile-child3"></div>-->
+     
+      <div class="notifications">Notifications</div>
+      <div class="login-details">Login details</div>
+      <div class="payment-details">Payment details</div>
+      <div class="logout">Logout</div>
+      <div class="settings">Settings</div>
+      <img class="ellipse-icon" alt="" src="./images/user.png" />
+      <div class="icons">
+        <span style="position:absolutei;"><i class="fa-solid fa-shield-check"></i></span>
+        <p class="home">Home</p>  
+        <p class="reviews">Reviews</p> 
+        <p class="account">Account</p> 
+          <span style="position: absolute; bottom: 30px; right: 45px;"><i class="fa-solid fa-user"></i></span> 
+          <span style="position: absolute; bottom: 30px; left: 80px;"><i class="fa-solid fa-house"></i></span>
+          <span style="position: absolute; bottom: 30px; right: 100px;"><i class="fa-sharp fa-regular fa-notebook"></i></span>
+          <span style="position: absolute; bottom:30px; left: 190px;"><i class="fa-sharp fa-regular fa-heart"></i></span>
+            </div>
+    </div>
+
+    <script>
+      var rectangle2 = document.getElementById("rectangle2");
+      if (rectangle2) {
+        rectangle2.addEventListener("click", function (e) {
+          window.location.href = "./sign-in.html";
+        });
+      }
+      </script>
+  </body>
+</html>

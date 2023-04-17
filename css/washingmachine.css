@@ -1,0 +1,329 @@
+.complete,
+.order,
+.transaction,
+.washing {
+  position: absolute;
+  top: 206px;
+  left: 54px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+}
+.complete,
+.transaction,
+.washing {
+  left: 116px;
+}
+.complete,
+.washing {
+  left: 202px;
+}
+.complete {
+  left: 279px;
+}
+.vector-icon,
+.washing-machine-child {
+  position: absolute;
+  top: 153px;
+  left: 52px;
+  width: 40px;
+  height: 40px;
+}
+.vector-icon {
+  height: 1.53%;
+  width: 4.58%;
+  top: 19.48%;
+  right: 78.88%;
+  bottom: 78.99%;
+  left: 16.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.washing-machine-item {
+  position: absolute;
+  top: 172.5px;
+  left: 91.5px;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 40px;
+  height: 1px;
+}
+.line-div,
+.washing-machine-inner {
+  position: absolute;
+  top: 153px;
+  left: 131px;
+  width: 40px;
+  height: 40px;
+}
+.line-div {
+  top: 172.5px;
+  left: 170.5px;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 1px;
+}
+.ellipse-icon,
+.washing-machine-child1 {
+  position: absolute;
+  top: 153px;
+  left: 210px;
+  width: 40px;
+  height: 40px;
+}
+.washing-machine-child1 {
+  top: 172.5px;
+  left: 249.5px;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 1px;
+}
+.washing-machine-child2 {
+  position: absolute;
+  top: 153px;
+  left: 289px;
+  width: 40px;
+  height: 40px;
+}
+
+.washing-machine1 {
+  position: absolute;
+  top: 130px;
+  left: 98px;
+  font-size: var(--font-size-5xl);
+}
+.clothes{
+  position: absolute;
+  top: 180px;
+  left: 0;
+  width: 375px;
+  height: 205px;
+  object-fit: cover;
+}
+.logo{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+  }
+.choose-date-and {
+  top: 280px;
+  left: 60px;
+
+  font-size:14px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 420px;
+  left: 0px;
+  box-sizing: border-box;
+  border-radius:20px;
+  border-radius: var(--br-3xs);
+  padding: 20px;
+  background-color:none;
+  width: 308px;
+  height: 150px;
+}
+.dateandtime, .submit, .takentime{
+  font-size: 14px;
+  font-family: var(--font-nunito);
+
+}
+.choose-date-and{
+  font-size: 18px;
+}
+.submit{
+  margin: 5px;
+  color: white;
+  background-color: black;
+}
+
+.am,
+.date,
+.div,
+.time {
+  position: absolute;
+  top: 342px;
+  left: 278px;
+  display: inline-block;
+  width: 70.68px;
+  height: 18.69px;
+}
+.date,
+.div,
+.time {
+  top: 323px;
+  left: 297px;
+  width: 39.68px;
+}
+.date,
+.div {
+  top: 346.39px;
+  left: 51.88px;
+  width: 93.12px;
+}
+.date {
+  top: 322.79px;
+  left: 62.91px;
+  width: 37.98px;
+}
+.washing-machine-child3 {
+  position: absolute;
+  top: 443px;
+  left: 44px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 63px;
+  height: 41px;
+}
+.kg {
+  position: absolute;
+  top: 455px;
+  left: 62px;
+}
+.washing-machine-child4 {
+  position: absolute;
+  top: 443px;
+  left: 265px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 82px;
+  height: 41px;
+}
+.mins {
+  position: absolute;
+  top: 454px;
+  left: 284px;
+}
+.time-taken,
+.weight-of-clothes {
+  position: absolute;
+  top: 415px;
+  left: 42px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-montserrat);
+}
+.time-taken {
+  top: 414px;
+ position: absolute;
+  left: 44px;
+  border-radius: 10px;
+  border-radius: var(--br-3xs);
+  padding: 20px;
+  background-color: aliceblue;
+  width: 308px;
+  height: 60px;
+}
+
+.payment-method {
+  position: absolute;
+  top: 660px;
+  left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.washing-machine-child5 {
+  position: absolute;
+  top: 702px;
+  left: 30px;
+  border-radius: 10px;
+  background-color: #2aa3f6;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 43px;
+  cursor: pointer;
+}
+.pay-250ksh {
+  position: absolute;
+  top: 714px;
+  left: 90px;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.mpesa-logo{
+  position: absolute;
+  top: 660px;
+  left: 150px;
+  width: 150px;
+  height: 30px;
+  object-fit: cover;
+
+}
+.rectangle-icon {
+  position: absolute;
+  top: 583px;
+  left: 55px;
+  width: 41px;
+  height: 38px;
+  object-fit: cover;
+}
+.line-icon {
+  position: absolute;
+  top: 630px;
+  left: 58px;
+  width: 291px;
+  height: 2px;
+}
+.washing-machine-child6 {
+  position: absolute;
+  top: 602px;
+  left: 330px;
+  width: 23px;
+  height: 23px;
+}
+.washing-machine-child7 {
+  position: absolute;
+  top: 790px;
+  left: 2px;
+  border-radius: 0 0 var(--br-xl) var(--br-xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 392px;
+  height: 60px;
+}
+.icons{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 376px; 
+  height: 70px; 
+  background-color:white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 8px;
+}
+.home{
+  position: absolute;
+  left:70px;
+}
+.reviews{
+  position: absolute;
+  left:180px ;
+}
+.account{
+  position: absolute;
+  right: 30px;
+}
+.washing-machine {
+  position: relative;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    180deg,
+    #fff 0.82%,
+    #fff 28.29%,
+    #fff 45.77%,
+    #f5f8fb 61.74%,
+    #f5f8fb
+  );
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-nunito);
+}

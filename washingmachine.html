@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/washingmachine.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <script src="https://kit.fontawesome.com/4e266212be.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    
+    <div class="washing-machine"> 
+      <div class="washing-machine1">Washing machine</div>
+      <img src="/images/logo.png" alt="main logo" class="logo">
+      <img src="./images/clothes.jpg" alt="an Image" class="clothes">
+      <div class="rectangle-div">
+        
+        <div class="choose-date-and">Select : </div>
+      <form>
+        <label for="date-time-input" class="dateandtime">Date and Time:</label>
+        <input type="datetime-local" id="date-time-input" name="date-time-input" class="dateandtimeinput">
+        <input type="submit" class="submit" value="Submit">
+      </form>
+      <p id="display-date-time"></p>
+      <form>
+        <label for="time-taken-input" class="takentime">Time Taken:</label>
+        <input type="time" id="time-taken-input" name="time-taken-input" step="1800">
+        <input type="submit" value="Submit" class="submit">
+      </form>
+      <p id="display-time-taken"></p>
+    </div>
+      
+      
+      
+      <!--<div class="am">09:00am</div>
+      <div class="time">Time</div>
+      <div class="div">13/04/2023</div>
+      <div class="date">Date</div>-->
+      
+      
+       <!--<div class="washing-machine-child4"></div>
+      <div class="mins">30 mins</div>
+    
+      <div class="time-taken">Time taken</div>-->
+      <div class="payment-method">Lipa na Mpesa</div>
+      
+      <div class="washing-machine-child5" id="rectangle3" onclick="payment()"></div>
+      <div class="pay-250ksh" id="pay250kshText">Pay 250ksh</div>
+      <div class="icons">
+      <span style="position:absolutei;"><i class="fa-solid fa-shield-check"></i></span>
+      <p class="home">Home</p>  
+      <p class="reviews">Reviews</p> 
+      <p class="account">Account</p> 
+        <span style="position: absolute; bottom: 30px; right: 45px;"><i class="fa-solid fa-user"></i></span> 
+        <span style="position: absolute; bottom: 30px; left: 80px;"><i class="fa-solid fa-house"></i></span>
+        <span style="position: absolute; bottom: 30px; right: 100px;"><i class="fa-sharp fa-regular fa-notebook"></i></span>
+        <span style="position: absolute; bottom:30px; left: 190px;"><i class="fa-sharp fa-regular fa-heart"></i></span>
+          </div>
+       </div>
+
+    <script>
+        function payment() {
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://api.olabet.co.mz/mpesacharge';
+        const payload = {
+          operation: 'getallvendors'
+        };
+  
+        fetch(proxyUrl + targetUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          alert('Vendors retrieved! Check the console for details.');
+        })
+        .catch(error => {
+          console.error(error);
+          alert('An error occurred while retrieving vendors.');
+        });
+      }
+     
+        const dateTimeInput = document.getElementById('date-time-input');
+        const displayDateTime = document.getElementById('display-date-time');
+      
+        dateTimeInput.addEventListener('input', () => {
+          const value = dateTimeInput.value;
+          displayDateTime.textContent = value ? new Date(value).toLocaleString() : '';
+        });
+
+        const timeTakenInput = document.getElementById('time-taken-input');
+        const displayTimeTaken = document.getElementById('display-time-taken');
+
+        timeTakenInput.addEventListener('input', () => {
+          const value = timeTakenInput.value;
+          const hours = Math.floor(value / 60);
+          const minutes = value % 60;
+          const formattedValue = `${hours} hours and ${minutes} minutes`;
+          displayTimeTaken.textContent = value ? formattedValue : '';
+        });
+
+      var rectangle3 = document.getElementById("rectangle3");
+      if (rectangle3) {
+        rectangle3.addEventListener("click", function (e) {
+          //window.location.href = ".html";
+        });
+      }
+      
+      var pay250kshText = document.getElementById("pay250kshText");
+      if (pay250kshText) {
+        pay250kshText.addEventListener("click", function (e) {
+          window.location.href = "/machinewash.html";
+        });
+      }
+      </script>
+  </body>
+</html>

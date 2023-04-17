@@ -1,0 +1,148 @@
+.washing1 {
+    position: absolute;
+    top: 120px;
+    left: 141px;
+    font-size: var(--font-size-5xl);
+  }
+  .washing-child {
+    position: absolute;
+    top: 200px;
+    left: 44px;
+    width: 74px; height: 27px; background-color: rgba(42, 163, 246, 1); border-radius: 20px; 
+  }
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+    }
+    
+  .start {
+    position: absolute;
+    top: 200px;
+    left: 64px;
+    color: var(--color-white);
+  }
+  .washing-item {
+    position: absolute;
+    top: 200px;
+    left: 162px;
+    width: 78px; height: 27px; background-color: rgba(245, 248, 251, 1); border-radius: 20px;
+  }
+  .stop,
+  .washing-inner {
+    position: absolute;
+    top: 200px;
+    left: 190px;
+  }
+  .washing-inner {
+    top: 200px;
+    left: 284px;
+    width: 78px; height: 27px; background-color: rgba(245, 248, 251, 1); border-radius: 20px;
+  }
+  .pause,
+  .rectangle-icon {
+    position: absolute;
+    top: 200px;
+    left: 306px;
+  }
+  .rectangle-icon {
+    top: 300px;
+    left: 94px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .your-clothes-are {
+    margin: 0;
+    font-weight: bold;
+  }
+  .soon{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-weight: bold;
+    white-space: pre-wrap;
+  }
+  .your-clothes-are-container {
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    font-size: var(--font-size-mini);
+    color: rgba(0, 0, 0, 0.66);
+    white-space: pre-wrap;
+  }
+  .order-details {
+    position: absolute;
+    top: 690px;
+    left: 25px;
+  }
+  .service-washing-machine {
+    position: absolute;
+    top: 720px;
+    left: 26px;
+    font-size: var(--font-size-smi);
+  }
+  .amount-paid250ksh,
+  .total-weight-2kg30min {
+    position: absolute;
+    top: 750px;
+    left: 25px;
+    font-size: var(--font-size-smi);
+  }
+  .date-and-time{
+    position: absolute;
+    top: 800px;
+    left: 25px;
+  }
+  .amount-paid250ksh,
+  .total-weight-2kg30min {
+    top: 740px;
+  }
+  .amount-paid250ksh {
+    top: 770px;
+    left: 26px;
+  }
+  .rectangle-div {
+    position: absolute;
+    top: 680px;
+    left: 269px;
+    border-radius: var(--br-3xs);
+    background-color:rgb(243,176,0);
+    width: 100px;
+    height: 26px;
+  }
+  .ongoing {
+    position: absolute;
+    top: 680px;
+    left: 298px;
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+  }
+  .vector-icon {
+    position: absolute;
+    height: 1.64%;
+    width: 2.04%;
+    top: 8.69%;
+    right: 87.79%;
+    bottom: 89.67%;
+    left: 10.18%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .washing {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-nunito);
+  }
+  

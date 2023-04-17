@@ -1,0 +1,279 @@
+.vector-icon,
+.vector-icon1 {
+  position: absolute;
+  height: 1.63%;
+  width: 1.72%;
+  top: 13.15%;
+  right: 59.61%;
+  bottom: 85.22%;
+  left: 38.68%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon1 {
+  height: 0.62%;
+  width: 1.46%;
+  top: 14.95%;
+  right: 59.73%;
+  bottom: 84.43%;
+  left: 38.8%;
+}
+.hello-caroline {
+  position: absolute;
+  top: 113px;
+  left: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+.why-dont-you {
+  position: absolute;
+  top: 161px;
+  left: 68px;
+  font-size: 14px;
+  color: var(--color-darkgray);
+}
+.homepage-child,
+.homepage-inner,
+.homepage-item {
+  position: absolute;
+  top: 197px;
+  left: 0;
+  width: 393px;
+  height: 242px;
+  object-fit: cover;
+}
+.homepage-inner,
+.homepage-item {
+  top: 500px;
+  left: 7px;
+  width: 127px;
+  height: 139px;
+}
+.homepage-inner {
+  top: 654px;
+}
+.details,
+.services {
+  position: absolute;
+  top: 442px;
+  left: 21px;
+}
+.details {
+  left: 322px;
+  color: var(--color-darkgray);
+}
+.rectangle-div {
+  position: absolute;
+  top: 792px;
+  left: 1px;
+  border-radius: 0 0 var(--br-xl) var(--br-xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 392px;
+  height: 60px;
+}
+.dryer,
+.homepage-child1 {
+  position: absolute;
+  left: 145px;
+}
+.homepage-child1 {
+  top: 517px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke);
+  width: 227px;
+  height: 79px;
+}
+.dryer {
+  top: 527px;
+  display: inline-block;
+  width: 52.77px;
+  height: 38.5px;
+}
+.vector-icon2 {
+  position: absolute;
+  height: 1.47%;
+  width: 1.97%;
+  top: 64.11%;
+  right: 7.03%;
+  bottom: 34.42%;
+  left: 91%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.homepage-child2 {
+  position: absolute;
+  top: 678px;
+  left: 145px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke);
+  width: 227px;
+  height: 83px;
+  cursor: pointer;
+}
+.washing-machine {
+  position: absolute;
+  top: 688px;
+  left: 145px;
+}
+.kg30min {
+  margin: 0;
+}
+.kg30min-250ksh,
+.kg30min-250ksh1 {
+  position: absolute;
+  top: 717px;
+  left: 145px;
+  font-size: var(--font-size-xs);
+}
+.kg30min-250ksh1 {
+  top: 553px;
+}
+.vector-icon3,
+.vector-icon4,
+.vector-icon5 {
+  position: absolute;
+  height: 1.64%;
+  width: 2.04%;
+  top: 84.04%;
+  right: 7.12%;
+  bottom: 14.32%;
+  left: 90.84%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon4,
+.vector-icon5 {
+  height: 2.58%;
+  width: 5.09%;
+  top: 94.01%;
+  right: 76.59%;
+  bottom: 3.4%;
+  left: 18.32%;
+}
+.vector-icon5 {
+  height: 1.41%;
+  width: 2.04%;
+  top: 95.19%;
+  right: 78.12%;
+  left: 19.85%;
+}
+.vector-icon6,
+.vector-icon7 {
+  position: absolute;
+  top: 801.88px;
+  left: 148px;
+  width: 22.9px;
+  height: 20.23px;
+}
+.vector-icon7 {
+  height: 2.35%;
+  width: 5.09%;
+  top: 94.25%;
+  right: 37.17%;
+  bottom: 3.4%;
+  left: 57.74%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon10,
+.vector-icon11,
+.vector-icon12,
+.vector-icon8,
+.vector-icon9 {
+  position: absolute;
+  height: 0.7%;
+  width: 0.51%;
+  top: 94.01%;
+  right: 38.45%;
+  bottom: 5.28%;
+  left: 61.04%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon10,
+.vector-icon11,
+.vector-icon12,
+.vector-icon9 {
+  right: 40.48%;
+  left: 59.01%;
+}
+.vector-icon10,
+.vector-icon11,
+.vector-icon12 {
+  height: 0.23%;
+  width: 5.09%;
+  top: 94.95%;
+  right: 37.17%;
+  bottom: 4.81%;
+  left: 57.74%;
+}
+.vector-icon11,
+.vector-icon12 {
+  height: 0.94%;
+  width: 4.58%;
+  top: 95.48%;
+  right: 18.35%;
+  bottom: 3.58%;
+  left: 77.07%;
+}
+.vector-icon12 {
+  height: 1.17%;
+  width: 2.54%;
+  top: 94.19%;
+  right: 19.36%;
+  bottom: 4.64%;
+  left: 78.09%;
+}
+.account,
+.history,
+.home,
+.reviews {
+  position: absolute;
+  top: 829px;
+  font-size: var(--font-size-3xs);
+}
+.home {
+  left: 70px;
+  color: var(--color-royalblue);
+}
+.account,
+.history,
+.reviews {
+  left: 142px;
+}
+.account,
+.history {
+  left: 220px;
+}
+.account {
+  left: 297px;
+}
+.ellipse-icon {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 113px;
+  height: 113px;
+  object-fit: cover;
+}
+.homepage {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-nunito);
+}

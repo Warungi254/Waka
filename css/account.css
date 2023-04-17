@@ -1,0 +1,172 @@
+.profile1 {
+    position: absolute;
+    top: 72px;
+    left: 153px;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+  }
+  .caroline-waruingi,
+  .cwanjirugmailcom {
+    position: absolute;
+    top: 132px;
+    left: 127px;
+    font-size: var(--font-size-mini);
+    font-weight: 500;
+  }
+  .cwanjirugmailcom {
+    top: 162px;
+    left: 128px;
+    font-size: var(--font-size-xs);
+    color: var(--color-royalblue);
+  }
+  .profile-child {
+    position: absolute;
+    top: 243px;
+    left: 21px;
+    border-radius: 10px;
+    background-color: #F5F8FB;
+    width: 351px;
+    height: 50px;
+  }
+  .account-details {
+    position: absolute;
+    top: 258px;
+    left: 41px;
+  }
+  .profile-child1,
+  .profile-child2,
+  .profile-child3,
+  .profile-inner,
+  .profile-item,
+  .rectangle-div {
+    position: absolute;
+    left: 21px;
+    border-radius: 10px;
+    background-color: #F5F8FB;
+    height: 47px;
+  }
+  .profile-item {
+    top: 309px;
+    width: 354px;
+  }
+  .profile-child1,
+  .profile-child2,
+  .profile-child3,
+  .profile-inner,
+  .rectangle-div {
+    width: 351px;
+  }
+  .profile-inner {
+    top: 440px;
+    cursor: pointer;
+  }
+  .profile-child1,
+  .profile-child2,
+  .profile-child3,
+  .rectangle-div {
+    top: 506px;
+  }
+  .profile-child1,
+  .profile-child2,
+  .profile-child3 {
+    top: 567px;
+  }
+  .profile-child2,
+  .profile-child3 {
+    top: 628px;
+  }
+  .profile-child3 {
+    top: 792px;
+    left: 393px;
+    border-radius: 0 0 var(--br-xl) var(--br-xl);
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 392px;
+    height: 60px;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+  }
+  
+  .account,
+  .history,
+  .home,
+  .reviews {
+    position: absolute;
+    
+    left: 71px;
+    font-size: var(--font-size-3xs);
+    font-family: var(--font-nunito);
+  }
+  .account,
+  .history,
+  .reviews {
+    left: 143px;
+  }
+  .reviews{
+    left: 170px;
+  }
+  .account,
+  .history {
+    left: 221px;
+  }
+  .account {
+    left: 298px;
+    color: var(--color-royalblue);
+  }
+  .login-details,
+  .notifications {
+    position: absolute;
+    top: 324px;
+    left: 39px;
+  }
+  .login-details {
+    top: 455px;
+    left: 42px;
+  }
+  .logout,
+  .payment-details {
+    position: absolute;
+    top: 522px;
+    left: 41px;
+  }
+  .logout {
+    top: 584px;
+  }
+  .ellipse-icon,
+  .settings {
+    position: absolute;
+    top: 641px;
+    left: 42px;
+  }
+  .ellipse-icon {
+    top: 100px;
+    left: 17px;
+    width: 108px;
+    height: 108px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: none;
+    object-fit: cover;
+  }
+  .icons{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 390px; 
+  height: 70px; 
+  background-color:white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 8px;
+    }
+     .profile {
+    position: relative;
+    background: linear-gradient(180deg, #f5db2b, #e98ff8 33.65%, #0767f8);
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--color-black);
+    font-family: var(--font-montserrat);
+  }
+  

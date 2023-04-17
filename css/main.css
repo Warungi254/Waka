@@ -1,0 +1,173 @@
+.tired-child,
+.tired-item {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 155px;
+  height: 138px;
+  object-fit: cover;
+}
+.tired-item {
+  top: 193px;
+  left: 21px;
+  width: 351px;
+  height: 251px;
+}
+.the-best-solution {
+  margin: 0;
+  font-weight: 500;
+  font-size: 35px;
+}
+.blank-line {
+  margin: 0;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-habibi);
+}
+.the-best-solution-container {
+  position: absolute;
+  top: 499px;
+  left: 21px;
+  display: inline-block;
+  width: 351px;
+  height: 145px;
+}
+.tired-inner {
+  position: absolute;
+  top: 752px;
+  left: 14px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 351px;
+  height: 42px;
+}
+.get-started {
+  position: absolute;
+  top: 758px;
+  left: 119px;
+  font-weight: 500;
+  color: var(--color-royalblue);
+  cursor: pointer;
+}
+.tired {
+  position: relative;
+  background: linear-gradient(
+    180.02deg,
+    #fff,
+    #fff 57.51%,
+    #8acdfa 84.27%,
+    #2aa3f6
+  );
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray);
+  font-family: var(--font-nunito);
+}
+
+ .home, .login, .monday-friday-0600-container, .about-wakawash{
+  display: none;
+}
+@media only screen and (min-width: 1000px){    
+  .home, .login{
+    float: right;
+    font-family: var(--font-nunito);
+    color: black;
+    font-weight: 100px;
+    text-align: center;
+    display: block;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }    
+  .tired-child{
+    width: 180px;
+    height: 170px;
+
+  }       
+    .tired-item{
+    position: absolute;
+    width: calc(100% - 600px);
+    top: calc(50% - 409px);
+    right: 0;
+    left: 750px;
+    max-width: 50%;
+    overflow: hidden;
+    height: 514px;
+    object-fit: cover;
+    padding-top: 20px;
+    }
+    .tired {
+        position: relative;
+      
+        background: linear-gradient(
+          180.02deg,
+          #fff,
+          #ffffff 65.51%,
+          #8acdfa 84.27%,
+          #2aa3f6
+        );
+    }
+    .the-best-solution-container {
+        position: absolute;
+        top: 270px;
+        left: 18px;
+        width: 549px;
+         height: 98px;
+  
+    }
+
+    .tired-inner{
+        top: 500px;
+        left: 14px;
+        width: 351px;
+        height: 42px;
+    }
+
+    .get-started{
+        top: 500px;
+        left: 120px;
+    }
+    .tired-child, .the-best-solution-container, .get-started, .tired-inner{
+      padding-left: 10px;
+    }
+   .about-wakawash-parent {
+      bottom: 100px;
+      left: 97px;
+      height: 47px;
+    }
+    .about-wakawash {
+      position: absolute;
+      display: inline-block;
+      bottom: 120px;
+      left: 0;
+      font-size: 15px;
+      font-weight: 500px;
+      width: 224px;
+      padding-left: 20px;
+     
+    }
+    .monday-friday-0600-container {
+      position: absolute;
+      bottom: 50px;
+      left: 0px;
+      padding-left: 10px;
+      
+    }
+    .the-best{
+      padding-left:10px ;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .the-best-solution{
+      margin: 0;
+      font-size: 20px;
+      padding-left: 10px;
+      font-size: 30px;
+    }
+    .blank-line{
+      font-weight: 500;
+    }
+}

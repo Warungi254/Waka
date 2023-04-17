@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/mashinewash.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="washing">
+      <div class="washing1">Washing</div>
+      <div class="washing-child"></div>
+      <div class="start" onclick="startMachine()">start</div>
+      <div class="washing-item"></div>
+      <div class="stop">stop</div>
+      <div class="washing-inner"></div>
+      <div class="pause" onclick="pauseMachine()">pause</div>
+      <img src="./images/logo.png" alt="main logo" class="logo">
+      <img class="rectangle-icon" alt="" src="./images/machinewash.jpg" />
+      <div class="your-clothes-are-container">
+        <p class="your-clothes-are">
+        your clothes are still washed will be finished </p>
+        <p class="soon">soon</p>
+      </div>
+      <div class="order-details">Order details</div>
+      <div class="service-washing-machine">Service: Washing Machine</div>
+      <div class="date-and-time">Date and time Monday,7th 2022 at 09:00a.m</div>
+      <div class="total-weight-2kg30min">Total weight 2kg/30min</div>
+      <div class="amount-paid250ksh">Amount paid:250ksh</div>
+      <div class="rectangle-div"></div>
+      <b class="ongoing">ongoing</b
+      ><img class="vector-icon" alt="" src="./public/vector.svg" />
+    </div>
+
+    <script>
+      function startMachine() {
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://api.olabet.co.mz/operatemachine';
+        const payload = {
+          operation: 'getallvendors'
+        };
+  
+        fetch(proxyUrl + targetUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          //alert('Vendors retrieved! Check the console for details.');
+        })
+        .catch(error => {
+          console.error(error);
+          //alert('An error occurred while retrieving vendors.');
+        });
+      }
+      function pauseMachine() {
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://api.olabet.co.mz/operatemachine';
+        const payload = {
+          operation: 'getallvendors'
+        };
+  
+        fetch(proxyUrl + targetUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          console.log(data);
+          //alert('Vendors retrieved! Check the console for details.');
+        })
+        .catch(error => {
+          console.error(error);
+          //alert('An error occurred while retrieving vendors.');
+        });
+      }
+    </script>
+  </body>
+</html>

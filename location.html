@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/location.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"/>
+    
+  </head>
+  <body>
+    <div class="location">
+      <div class="before-we-begin-container">
+        <p class="before-we-begin">Before we begin where</p>
+        <p class="before-we-begin">Where would you want your</p>
+        <p class="before-we-begin">laundry service done?</p>
+      </div>
+      <!--<img class="location-item" alt="logo image" src="./images/logo.png" />-->
+      <button class="next-button" onclick="location.href='/OAUTH/index.html'">Next</button>
+      <form id="vendor-form">
+        <label for="search-vendors" class="select">Search Vendors</label>
+        <input type="text" id="search-vendors" class="vendor-input">
+        <button onclick="getVendors()">Get vendors</button>
+      </form>
+    </div>
+
+    <script>
+      function getVendors() {
+       const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+       const targetUrl = 'https://api.olabet.co.mz/addmachine';
+       const payload = {
+         operation: 'getallvendors'
+       };
+ 
+       fetch(proxyUrl + targetUrl, {
+         method: 'GET',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify(payload)
+       })
+       .then(response => response.json())
+       .then(data => {
+         console.log(data);
+         alert('Vendors retrieved! Check the console for details.');
+       })
+       .catch(error => {
+         console.error(error);
+         alert('An error occurred while retrieving vendors.');
+       });
+     }
+       </script>      
+  </body>
+</html>
+
+       
