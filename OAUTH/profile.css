@@ -1,10 +1,9 @@
 .hello-caroline {
   position: absolute;
   top: 93px;
-  left: 57px;
-  font-size: var(--font-size-xl);
+  left: 0px;
+  font-size: 18px;
   font-weight: 600;
-  color: var(--color-gray-100);
   display: inline-block;
   width: 131px;
   height: 31.1px;
@@ -13,16 +12,18 @@
   position: absolute;
   top: 131px;
   left: 49px;
-  color: var(--color-darkgray);
+  font-size: 14px;
+  
 }
 .details,
 .services {
   position: absolute;
   top: 470px;
-  left: 211px;
+  left: 200px;
 }
 .details {
-  left: 312px;
+  font-size: 14px;
+  left: 300px;
   color: var(--color-darkgray);
 }
 .homepage-child {
@@ -41,17 +42,36 @@
   left: 158px;
   border-radius: 10px;
   background-color: white;
-  width: 214px;
-  height: 48px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 45px;
+  padding: 1px 0px;
   
 }
 .add-drier {
+  font-size: 14px;
   position: absolute;
   top: 546px;
-  left: 216px;
+  left: 170px;
   color: var(--color-royalblue);
 }
-
+.add, .adds, .add-drier , .add-wash{
+  font-family: var(--font-nunito);
+}
+.add,  .adds, .why-dont-you, .hello-caroline, .services{
+    color: #400A76;
+}
+.services{
+  font-weight: bold;
+  font-size: 14px;
+}
+.add{
+    position: absolute;
+    font-size: 14px;
+    top: 546px;
+    right: 30px;
+    
+}
 
 .homepage-inner {
   position: absolute;
@@ -59,15 +79,25 @@
   left: 158px;
   border-radius: 10px;
   background-color: white;
-  width: 214px;
-  height: 48px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  padding: 1px 0px;
+  height: 45px;
   cursor: pointer;
 }
 .add-wash {
+  font-size: 14px;
   position: absolute;
   top: 698px;
-  left: 220px;
+  left: 170px;
   color: var(--color-royalblue);
+}
+.adds{
+  font-size: 14px;
+  position: absolute;
+  top: 698px;
+  right: 30px;
+  color: black;
 }
 
 
@@ -113,17 +143,16 @@ color: black;
 .homepage-child1,
 .homepage-child2 {
   top: 498.08px;
-  left: 11.1px;
+  left:20px;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 142.68px;
-  height: 122.85px;
+  width: 115px;
+  height: 100px;
 }
 .homepage-child2 {
   top: 641px;
-  left: 11px;
-  width: 141px;
-  height: 121px;
+  width: 115px;
+  height: 100px;
 }
 
 .homepage {

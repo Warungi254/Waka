@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p>Search</p>
+    <input type="text" class="search" placeholder="Search your location" onkeyup="searchInput()" > 
+    <ul id="displayVendornames">
+        <li id="listOfVendorNames"></li>
+    </ul>
+    </div>
+    
+
+    <script>
+        function searchInput() {
+          let searchElement = document.querySelector('.search');
+          let searchTerm = searchElement.value.toLowerCase();
+          console.log(searchTerm);
+
+          const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+          const targetUrl = 'https://api.olabet.co.mz/addmachine';
+          const payload = {
+            operation: 'getallvendors'
+          };
+    
+          fetch(proxyUrl + targetUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          })
+          .then((data)=>{
+              return data.json();
+          })
+          .then((objectData)=>{
+              let filteredData = objectData.filter((value) => {
+                return value.Vendorname.toLowerCase().startsWith(searchTerm);
+              });
+              let listData = "";
+              filteredData.map((value)=>{
+                  listData += `<li onclick="selectVendor(this)" data-vendorid="${value.vendorid}">${value.Vendorname}</li>`;
+              });
+              document.getElementById("listOfVendorNames").innerHTML=listData;
+          })
+          .catch((err)=>{
+              console.log(err);
+          });
+        }
+
+        function selectVendor(listItem) {
+          let vendorId = listItem.dataset.vendorid;
+          console.log(vendorId);
+        }
+    </script>
+</body>
+</html>

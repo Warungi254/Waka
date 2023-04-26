@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/washers.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="iphone-14-pro-2">
+        <span style="position: absolute; top: 70px; left:30px;width:100px;"><i class="fa-solid fa-arrow-left"></i></span>
+      <div class="washers">Washers</div>
+      <div class="select-washer">Select washer</div>
+      <img class="iphone-14-pro-2-child" alt="" src="./images/vectorfour.jpg" />
+      <img class="iphone-14-pro-2-item" alt="" src="./images/vectorfour.jpg"/>
+      <img class="iphone-14-pro-2-inner" alt="" src="./images/vectorfour.jpg"/>
+      <img class="rectangle-icon" alt="" src="./images/vectorfour.jpg" />
+      <img class="iphone-14-pro-2-child1" alt="" src="./images/vectorfour.jpg"/>
+      <img class="iphone-14-pro-2-child2" alt="" src="./images/vectorfour.jpg"/>
+
+      <div class="rectangle-div"></div>
+      <div class="washer1">Washer1</div>
+      <div class="add" id="machine" onclick="getMachine()">Add</div>
+      <div class="iphone-14-pro-2-child3"></div>
+      <div class="washer2">Washer2</div>
+      <div class="add1" onclick="location.href='./washingmachine.html'">Add</div>
+      <div class="iphone-14-pro-2-child4"></div>
+      <div class="washer3">Washer3</div>
+      <div class="add2" onclick="location.href='./washingmachine.html'">Add</div>
+      <div class="iphone-14-pro-2-child5"></div>
+      <div class="washer4">Washer4</div>
+      <div class="add3" onclick="location.href='./washingmachine.html'">Add</div>
+      <div class="iphone-14-pro-2-child6"></div>
+      <div class="washer5">Washer5</div>
+      <div class="add4" onclick="location.href='./washingmachine.html'">Add</div>
+      <div class="iphone-14-pro-2-child7"></div>
+      <div class="washer6">Washer6</div>
+      <div class="add5" onclick="location.href='./washingmachine.html'">Add</div>
+    </div>
+    <script>
+        function getMachine() {
+         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        const targetUrl = 'https://api.olabet.co.mz/addmachine';
+        const payload = {
+          "vendorid": "1",
+          "operation":"getvmachines"
+        };
+  
+        fetch(proxyUrl + targetUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        }).then((data)=>{
+            //console.log(data);
+            return data.json();
+        })
+        .catch((err)=>{
+            console.log(error);
+        })
+        let machine = document.getElementById("machine");
+      if (machine) {
+        machine.addEventListener("click", function (e) {
+          window.location.href = "./washingmachine.html";
+        });
+      }
+      
+    }
+    
+    </script>
+  </body>
+</html>
