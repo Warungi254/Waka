@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <script src="https://kit.fontawesome.com/4e266212be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   </head>
   <body>
     
     <div class="washing-machine"> 
+      <span style="position: absolute; top: 135px; left:30px;width:100px;" onclick="location.href='./washers.html'"><i class="fa-solid fa-arrow-left"></i></span>
       <div class="washing-machine1">Washing machine</div>
       <img src="/images/logo.png" alt="main logo" class="logo">
       <img src="./images/clothes.jpg" alt="an Image" class="clothes">
@@ -50,7 +52,7 @@
       <div class="payment-method">Lipa na Mpesa</div>
       
       <div class="washing-machine-child5" id="rectangle3" onclick="payment()"></div>
-      <div class="pay-250ksh" id="pay250kshText">Pay 250ksh</div>
+      <div class="pay-250ksh" id="pay250kshText">Pay 100ksh</div>
       <div class="icons">
       <span style="position:absolutei;"><i class="fa-solid fa-shield-check"></i></span>
       <p class="home">Home</p>  
@@ -68,7 +70,8 @@
         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         const targetUrl = 'https://api.olabet.co.mz/mpesacharge';
         const payload = {
-          operation: 'getallvendors'
+          "MSISDN":"254722237857",
+          "amount":"1"
         };
   
         fetch(proxyUrl + targetUrl, {
@@ -83,11 +86,11 @@
         })
         .then(data => {
           console.log(data);
-          alert('Vendors retrieved! Check the console for details.');
+          //alert('Vendors retrieved! Check the console for details.');
         })
         .catch(error => {
           console.error(error);
-          alert('An error occurred while retrieving vendors.');
+          //alert('An error occurred while retrieving vendors.');
         });
       }
      

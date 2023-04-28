@@ -2,7 +2,7 @@
     position: absolute;
     top: 72px;
     left: 153px;
-    font-size: var(--font-size-xl);
+    font-size:20px;
     font-weight: 500;
   }
   .caroline-waruingi,
@@ -25,8 +25,8 @@
     left: 21px;
     border-radius: 10px;
     background-color: #F5F8FB;
-    width: 351px;
-    height: 50px;
+    width: 330px;
+    height: 47px;
   }
   .account-details {
     position: absolute;
@@ -47,14 +47,14 @@
   }
   .profile-item {
     top: 309px;
-    width: 354px;
+    width: 330px;
   }
   .profile-child1,
   .profile-child2,
   .profile-child3,
   .profile-inner,
   .rectangle-div {
-    width: 351px;
+    width: 330px;
   }
   .profile-inner {
     top: 440px;
@@ -81,7 +81,7 @@
     border-radius: 0 0 var(--br-xl) var(--br-xl);
     background-color: var(--color-white);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    width: 392px;
+    width: 330px;
     height: 60px;
     transform: rotate(180deg);
     transform-origin: 0 0;
@@ -92,9 +92,9 @@
   .home,
   .reviews {
     position: absolute;
-    
+    bottom: 0px;
+    font-size: 12px;
     left: 71px;
-    font-size: var(--font-size-3xs);
     font-family: var(--font-nunito);
   }
   .account,
@@ -103,15 +103,15 @@
     left: 143px;
   }
   .reviews{
-    left: 170px;
+    left: 180px;
   }
   .account,
   .history {
     left: 221px;
   }
   .account {
-    left: 298px;
-    color: var(--color-royalblue);
+    left: 300px;
+  
   }
   .login-details,
   .notifications {
@@ -128,6 +128,7 @@
     position: absolute;
     top: 522px;
     left: 41px;
+    font-size: 14px;
   }
   .logout {
     top: 584px;
@@ -137,6 +138,7 @@
     position: absolute;
     top: 641px;
     left: 42px;
+    font-size: 14px;
   }
   .ellipse-icon {
     top: 100px;
@@ -165,7 +167,7 @@
     height: 852px;
     overflow: hidden;
     text-align: left;
-    font-size: var(--font-size-sm);
+    font-size: 14px;
     color: var(--color-black);
     font-family: var(--font-montserrat);
   }

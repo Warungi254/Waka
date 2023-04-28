@@ -22,7 +22,7 @@
       <div class="add"><b>Add</b></div>
       <div class="homepage-inner" id="rectangle2"></div>
       <b class="add-wash"> Wash</b>
-       <div class="adds"><b>Add</b></div>
+       <div class="adds" onclick="getMachinesPerVendor()"><b>Add</b></div>
 
       <b class="home">Home</b>
       <div class="reviews">Reviews</div>
@@ -31,12 +31,33 @@
       <img class="rectangle-icon" alt="" src="./img/bigwash.png"/>
       <img class="homepage-child1" alt="" src="./img/dryer.png"/>
       <img class="homepage-child2" alt="" src="./img/mainwasher.png"/>
-     <span style="position: absolute; bottom: 25px; left: 80px;"><i class="fa fa-home" aria-hidden="true"></i></span>
-     <span style="position:absolute; bottom:25px; left:200px; "><i class="fa fa-heart" aria-hidden="true"></i></span>
-     <span style="position: absolute; bottom: 25px; right: 50px ;"><i class="fa fa-user" aria-hidden="true"></i></span>
+     <span style="position: absolute; bottom: 25px; left: 80px;"><i class="fa fa-home" aria-hidden="true" onclick="location.href='./OAUTH/profile.html'"></i></span>
+     <span style="position:absolute; bottom:25px; left:200px; "><i class="fa fa-heart" aria-hidden="true" onclick="location.href='./history.html'"></i></span>
+     <span style="position: absolute; bottom: 25px; right: 50px ;"><i class="fa fa-user" aria-hidden="true" onclick="location.href='/account.html'"></i></span>
     </div>
 
     <script>
+      function getMachinesPerVendor(){
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+          const targetUrl = 'https://api.olabet.co.mz/addmachine';
+          const payload = {
+            "vendorid":"1",
+           "operation":"getvmachines"
+          };
+    
+          fetch(proxyUrl + targetUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          }).then(response => response.json())
+          .then((data)=>{
+            console.log(data)
+              return data.json();
+          })
+
+      }
       var rectangle2 = document.getElementById("rectangle2");
       if (rectangle2) {
         rectangle2.addEventListener("click", function (e) {

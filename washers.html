@@ -23,30 +23,36 @@
 
       <div class="rectangle-div"></div>
       <div class="washer1">Washer1</div>
-      <div class="add" id="machine" onclick="getMachine()">Add</div>
+      <p class="paragraph">20 min - 100ksh</p>
+      <div class="add" id="machine" onclick="getMachine()">Select</div>
       <div class="iphone-14-pro-2-child3"></div>
       <div class="washer2">Washer2</div>
-      <div class="add1" onclick="location.href='./washingmachine.html'">Add</div>
+      <p class="paragraph1">20 min - 100ksh</p>
+      <div class="add1" onclick="getMachine()">Select</div>
       <div class="iphone-14-pro-2-child4"></div>
       <div class="washer3">Washer3</div>
-      <div class="add2" onclick="location.href='./washingmachine.html'">Add</div>
+      <p class="paragraph2">20 min - 100ksh</p>
+      <div class="add2" onclick="getMachine()">Select</div>
       <div class="iphone-14-pro-2-child5"></div>
       <div class="washer4">Washer4</div>
-      <div class="add3" onclick="location.href='./washingmachine.html'">Add</div>
+      <p class="paragraph3">25 min - 150ksh</p>
+      <div class="add3" onclick="getMachine()">Select</div>
       <div class="iphone-14-pro-2-child6"></div>
       <div class="washer5">Washer5</div>
-      <div class="add4" onclick="location.href='./washingmachine.html'">Add</div>
+      <p class="paragraph4">25 min - 150ksh</p>
+      <div class="add4"onclick="getMachine()">Select</div>
       <div class="iphone-14-pro-2-child7"></div>
       <div class="washer6">Washer6</div>
-      <div class="add5" onclick="location.href='./washingmachine.html'">Add</div>
+      <p class="paragraph5">25 min - 150ksh</p>
+      <div class="add5" ">Select</div>
     </div>
     <script>
         function getMachine() {
          const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         const targetUrl = 'https://api.olabet.co.mz/addmachine';
         const payload = {
-          "vendorid": "1",
-          "operation":"getvmachines"
+          "vendorid":"1",
+    "operation":"getvprices"
         };
   
         fetch(proxyUrl + targetUrl, {
@@ -55,15 +61,18 @@
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(payload)
-        }).then((data)=>{
-            //console.log(data);
-            return data.json();
+        }).then(response => {
+            return response.json();
+          })
+        .then((data)=>{
+          console.log(data);
+            return data;
         })
         .catch((err)=>{
-            console.log(error);
+            console.log(err);
         })
         let machine = document.getElementById("machine");
-      if (machine) {
+    if (machine) {
         machine.addEventListener("click", function (e) {
           window.location.href = "./washingmachine.html";
         });

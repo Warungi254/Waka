@@ -1,0 +1,332 @@
+.history1 {
+    position: absolute;
+    top: 62px;
+    left: 160px;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    font-family: var(--font-montserrat);
+  }
+  .history-child {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    background: linear-gradient(
+      96.1deg,
+      #f5f8fb,
+      #f5db2b 0.01%,
+      #e98ff8 52.36%,
+      #0767f8
+    );
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 393px;
+    height: 153px;
+  }
+  .total-amount-spent {
+    margin: 0;
+    font-weight: 500;
+  }
+  .ksh {
+    margin: 0;
+    font-size: var(--font-size-5xl);
+  }
+  .total-amount-spent-container {
+    position: absolute;
+    top: 152px;
+    left: 17px;
+    color: var(--color-white);
+    display: inline-block;
+    width: 307px;
+    height: 68px;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-montserrat);
+  }
+  .history-item {
+    position: absolute;
+    top: 167.88px;
+    left: 246.75px;
+    width: 128.38px;
+    height: 113.71px;
+    object-fit: cover;
+  }
+  .transaction-history {
+    position: absolute;
+    top: 306px;
+    left: 23px;
+    font-size: var(--font-size-mini);
+    font-weight: 600;
+    font-family: var(--font-montserrat);
+  }
+  .history-inner {
+    position: absolute;
+    top: 345px;
+    left: 17px;
+    border-radius: 10px;
+    background-color:whitesmoke;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    width: 353px;
+    height: 106px;
+  }
+  .service-washing-machine {
+    position: absolute;
+    top: 361px;
+    left: 30px;
+    font-size: 14px;
+  }
+  .date-and-time,
+  .total-weight-2kg30min {
+    position: absolute;
+    top: 384px;
+    left: 29px;
+    font-size: 14px;
+  }
+  .total-weight-2kg30min {
+    top: 406px;
+  }
+  .amount-paid250ksh,
+  .rectangle-div {
+    position: absolute;
+    top: 429px;
+    left: 30px;
+    font-size: 14px;
+  }
+  .rectangle-div {
+    top: 470px;
+    left: 17px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    width: 353px;
+    height: 106px;
+  }
+  .service-washing-machine1 {
+    position: absolute;
+    top: 481px;
+    left: 30px;
+    font-size: 14px;
+  }
+  .date-and-time1,
+  .total-weight-2kg30min1 {
+    position: absolute;
+    top: 504px;
+    left: 29px;
+    font-size:14px;
+  }
+  .total-weight-2kg30min1 {
+    top: 526px;
+    font-size: 14px;
+  }
+  .amount-paid250ksh1,
+  .completed {
+    position: absolute;
+    top: 549px;
+    left: 30px;
+    font-size: 14px;
+  }
+  .completed {
+    top: 535px;
+    left: 300px;
+    font-size: 14px;
+  }
+  .history-child1 {
+    position: absolute;
+    top: 595px;
+    left: 17px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: 1px solid darkgrey;
+    box-sizing: border-box;
+    width: 353px;
+    height: 106px;
+    font-size: 14px;
+  }
+  .service-washing-machine2 {
+    position: absolute;
+    top: 606px;
+    left: 30px;
+    font-size: 14px;
+  }
+  .date-and-time2,
+  .total-weight-2kg30min2 {
+    position: absolute;
+    top: 629px;
+    left: 29px;
+    font-size: 14px;
+  }
+  .total-weight-2kg30min2 {
+    top: 651px;
+    font-size: 14px;
+  }
+  .amount-paid250ksh2,
+  .completed1 {
+    position: absolute;
+    top: 674px;
+    left: 30px;
+  }
+  .completed1 {
+    top: 669px;
+    left: 300px;
+    font-size: 14px;
+  }
+  .history-child2 {
+    position: absolute;
+    top: 712px;
+    left: 17px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    width: 353px;
+    height: 106px;
+  }
+  .service-washing-machine3 {
+    position: absolute;
+    top: 723px;
+    left: 30px;
+  }
+  .date-and-time3,
+  .total-weight-2kg30min3 {
+    position: absolute;
+    top: 746px;
+    left: 29px;
+  }
+  .total-weight-2kg30min3 {
+    top: 768px;
+  }
+  .amount-paid250ksh3,
+  .completed2 {
+    position: absolute;
+    top: 791px;
+    left: 30px;
+  }
+  .completed2 {
+    top: 774px;
+    left: 315px;
+    font-size: var(--font-size-3xs);
+  }
+  .vector-icon,
+  .vector-icon1,
+  .vector-icon2,
+  .vector-icon3 {
+    position: absolute;
+    height: 2.58%;
+    width: 5.6%;
+    top: 44.84%;
+    right: 10.43%;
+    bottom: 52.58%;
+    left: 83.97%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon1,
+  .vector-icon2,
+  .vector-icon3 {
+    height: 1.41%;
+    width: 3.82%;
+    top: 45.07%;
+    bottom: 53.52%;
+    left: 85.75%;
+  }
+  .vector-icon2,
+  .vector-icon3 {
+    height: 2.58%;
+    width: 5.6%;
+    top: 60.09%;
+    right: 10.18%;
+    bottom: 37.32%;
+    left: 84.22%;
+  }
+  .vector-icon3 {
+    height: 1.41%;
+    width: 3.82%;
+    top: 60.33%;
+    bottom: 38.26%;
+    left: 86.01%;
+  }
+  .vector-icon4,
+  .vector-icon5,
+  .vector-icon6,
+  .vector-icon7,
+  .vector-icon8 {
+    position: absolute;
+    height: 2.58%;
+    width: 5.6%;
+    top: 75.35%;
+    right: 9.92%;
+    bottom: 22.07%;
+    left: 84.48%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon5,
+  .vector-icon6,
+  .vector-icon7,
+  .vector-icon8 {
+    height: 1.41%;
+    width: 3.82%;
+    top: 75.59%;
+    bottom: 23%;
+    left: 86.26%;
+  }
+  .vector-icon6,
+  .vector-icon7,
+  .vector-icon8 {
+    height: 2.58%;
+    width: 5.6%;
+    top: 88.38%;
+    right: 8.65%;
+    bottom: 9.04%;
+    left: 85.75%;
+  }
+  .vector-icon7,
+  .vector-icon8 {
+    height: 1.41%;
+    width: 3.82%;
+    top: 88.62%;
+    bottom: 9.97%;
+    left: 87.53%;
+  }
+  .vector-icon8 {
+    height: 9.74%;
+    width: 27.48%;
+    top: -76.17%;
+    right: -97.46%;
+    bottom: 166.43%;
+    left: 169.97%;
+  }
+  .history-child3 {
+    position: absolute;
+    top: 792px;
+    left: 392px;
+    border-radius: 0 0 var(--br-xl) var(--br-xl);
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 392px;
+    height: 60px;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+  }
+  .ongoing {
+    position: absolute;
+    top: 404px;
+    left: 323px;
+    font-size: var(--font-size-3xs);
+  }
+  .history {
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-smi);
+    color: var(--color-black);
+    font-family: var(--font-nunito);
+  }
+  

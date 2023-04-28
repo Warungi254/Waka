@@ -14,6 +14,49 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.8);
   }
+  .paragraph{
+    position: absolute;
+    top: 235px;
+    left: 120px;
+    font-size: 12px;
+    font-weight: 800px;
+  }
+  .paragraph1{
+    position: absolute;
+    top: 340px;
+    left: 120px;
+    font-size: 12px;
+    font-weight: 800px;
+  }
+  .paragraph2{
+    position: absolute;
+    top: 450px;
+    left: 120px;
+    font-size: 12px;
+    font-weight:  800px;
+  }
+  .paragraph3{
+    position: absolute;
+    top: 555px;
+    left: 120px;
+    font-size: 12px;
+    font-weight:  800px;
+  }
+  .paragraph4{
+    position: absolute;
+    top: 665px;
+    left: 120px;
+    font-size: 12px;
+    font-weight: 800px;
+  }
+  .paragraph5{
+    position: absolute;
+    top: 775px;
+    left: 120px;
+    font-size: 12px;
+    font-weight:  800px;
+  }
+
   .select-washer {
     position: absolute;
     top: 133px;

@@ -9,54 +9,25 @@
 <body>
     <div>
     <p>Search</p>
-    <input type="text" class="search" placeholder="Search your location" onkeyup="searchInput()" > 
-    <ul id="displayVendornames">
+    <input type="text" id="search" placeholder="Search your location" onkeyup="searchInput()" > 
+    <ul id="match-list">
         <li id="listOfVendorNames"></li>
     </ul>
     </div>
-    
 
     <script>
-        function searchInput() {
-          let searchElement = document.querySelector('.search');
-          let searchTerm = searchElement.value.toLowerCase();
-          console.log(searchTerm);
+        const search = document.getElementById('search');
+        const matchList = document.getElementById('match-list');
 
-          const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-          const targetUrl = 'https://api.olabet.co.mz/addmachine';
-          const payload = {
-            operation: 'getallvendors'
-          };
-    
-          fetch(proxyUrl + targetUrl, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-          })
-          .then((data)=>{
-              return data.json();
-          })
-          .then((objectData)=>{
-              let filteredData = objectData.filter((value) => {
-                return value.Vendorname.toLowerCase().startsWith(searchTerm);
-              });
-              let listData = "";
-              filteredData.map((value)=>{
-                  listData += `<li onclick="selectVendor(this)" data-vendorid="${value.vendorid}">${value.Vendorname}</li>`;
-              });
-              document.getElementById("listOfVendorNames").innerHTML=listData;
-          })
-          .catch((err)=>{
-              console.log(err);
-          });
+        const searchStates = async searchText => {
+          const res = await fetch('https://cors-anywhere.herokuapp.com/','https://api.olabet.co.mz/addmachine');
+          const states =  await res.json();
+
+          console.log(states)
         }
 
-        function selectVendor(listItem) {
-          let vendorId = listItem.dataset.vendorid;
-          console.log(vendorId);
-        }
+        search.addEventListener('input', () => searchStates(search.value))
+
     </script>
 </body>
 </html>

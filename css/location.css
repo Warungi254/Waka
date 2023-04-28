@@ -36,11 +36,11 @@
   }
   .select{
     position: absolute;
-    top: 330px ;
+    top: 350px ;
     left:29px ;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500px;
-    font-family:var(--font-nunito);
+    font-family:16px;
   }
   
   .get-vendors{
@@ -48,8 +48,31 @@
 top: 420px ;
 left:29px ;
   }
+.your-location{
+  position: absolute;
+  font-size: 16px;
+  top:420px;
+  left: 20px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  width: 150px;
+  max-height: 200px;
+  overflow-y: auto;
+ 
+}
+.your-location li{
+  font-size: 12px;
+    color: black;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
 
   .search {
+    
     position: absolute;
     background-color:  #f5f8fb;
     top: 370px ;
@@ -57,6 +80,7 @@ left:29px ;
     width: 300px;
     height: 37px;
     border-radius:12px ;
+    border-color: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 12px;
    

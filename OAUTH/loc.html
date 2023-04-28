@@ -21,17 +21,20 @@
         <button class="next-button" onclick="location.href='/OAUTH/index.html'">Next</button>
         <form autocomplete="off">
           <div class="container">
-          <label for="search-vendors" class="select">Search Vendors</label>
+          <label for="search-vendors" class="select">Search: </label>
           <input type="text" class="search" placeholder="Search your location" onkeyup="searchInput()" >
-          <ul id="displayVendornames">
+          
+          <ul id="displayVendornames" class="your-location">    
             <li id="listOfVendorNames"></li>
         </ul>
+      
           </div>
           </form>
-             <!--<button onclick="getVendors()" class="get-vendors">Get Vendors</button>-->
+            <!--<button onclick="getMachinesPerVendor()" class="get-vendors">Get Vendors</button>-->
         
     </div>
     <script>
+  
       function searchInput() {
           let searchElement = document.querySelector('.search');
           let searchTerm = searchElement.value.toLowerCase();
